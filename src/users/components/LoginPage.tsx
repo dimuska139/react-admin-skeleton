@@ -51,7 +51,7 @@ export const LoginPage: React.FC = () => {
                 <DialogContent>
                     <Form
                         onSubmit={onSubmit}
-                        render={({ handleSubmit }) => {
+                        render={({ handleSubmit, submitError }) => {
                             submit = handleSubmit;
                             return (
                                 <form onSubmit={handleSubmit}>

@@ -7,11 +7,11 @@ import {NavLink} from "react-router-dom";
 const classNames = require('classnames');
 
 const useStyles = makeStyles((theme: Theme) => createStyles({
-    breacrumbsContainer: {
+    breadcrumbsContainer: {
         paddingTop: theme.spacing(2),
         whiteSpace: "nowrap",
     },
-    breacrumbs: {
+    breadcrumbs: {
         display: "inline-block",
         flexWrap: "wrap",
         margin: 0,
@@ -60,9 +60,9 @@ export const Breadcrumbs: React.FC<BreadcrumbsProps> = (props: BreadcrumbsProps)
     const classes = useStyles();
     const {steps} = props;
     return (
-        <div className={classes.breacrumbsContainer}>
+        <div className={classes.breadcrumbsContainer}>
             <ol
-                className={classes.breacrumbs}
+                className={classes.breadcrumbs}
                 itemScope
                 itemType="http://schema.org/BreadcrumbList"
             >
